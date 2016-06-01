@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:checkedButton="@+id/tab_item_0"
+    android:gravity="center_vertical"
+    android:background="@color/tab_bg"
+    android:paddingTop="8dp">
+
+    <RadioButton
+        android:id="@+id/tab_item_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="知工会"
+        android:textSize="13sp"
+        android:drawableTop="@drawable/selector_tab_item_0"
+        android:gravity="center"
+        android:textColor="@color/color_tab_item_text"
+        />
+
+    <RadioButton
+        android:id="@+id/tab_item_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="护权益"
+        android:textSize="13sp"
+        android:drawableTop="@drawable/selector_tab_item_1"
+        android:gravity="center"
+        android:textColor="@color/color_tab_item_text"
+        />
+
+    <RadioButton
+        android:id="@+id/tab_item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="职工 · 家"
+        android:textSize="13sp"
+        android:drawableTop="@drawable/selector_tab_item_3"
+        android:gravity="center"
+        android:textColor="@color/color_tab_item_text"
+        />
+
+    <RadioButton
+        android:id="@+id/tab_item_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="惠服务"
+        android:textSize="13sp"
+        android:drawableTop="@drawable/selector_tab_item_4"
+        android:gravity="center"
+        android:textColor="@color/color_tab_item_text"
+        />
+
+</RadioGroup>

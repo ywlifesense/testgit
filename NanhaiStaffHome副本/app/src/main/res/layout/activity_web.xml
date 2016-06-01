@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/app_theme_color"
+        android:paddingBottom="@dimen/top_bar_padding"
+        android:paddingTop="@dimen/top_bar_padding">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_bar_btn_width"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fullscreen_custom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.tencent.smtt.sdk.WebView
+
+            android:id="@+id/webview"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent"
+
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

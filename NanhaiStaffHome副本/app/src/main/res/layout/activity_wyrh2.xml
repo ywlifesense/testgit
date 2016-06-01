@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:js="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/app_theme_color"
+        android:paddingBottom="@dimen/top_bar_padding"
+        android:paddingTop="@dimen/top_bar_padding">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_bar_btn_width"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要入会"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space2"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_email"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="姓名："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_tle_email"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_birth"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="身份证号："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_tle_birth"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_introduce2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="手机号："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_tle_introduce2"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_introduce3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="工作单位："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_gzdw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_tle_introduce3"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_introduce4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="所属镇街及村社区、工业园："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_ssgh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_tle_introduce4"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/user_info_item_space"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/text_color_fouth" />
+
+                <TextView
+                    android:id="@+id/tv_tle_introduce5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="单位地址："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_tle_introduce5"
+                    android:background="@color/transparent"
+                    android:hint="填写"
+                    android:minWidth="200dp"
+                    android:textColor="@color/text_color_second"
+                    android:textSize="@dimen/user_info_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_fouth" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#f2f2f2"
+                android:padding="10dp"
+                android:text="        以工资收入为主要生活来源的体力劳动者和脑力劳动者，均有依法参加和组织工会的权利。\n        您若自愿加入工会组织，请提供相关信息。我们将尽快安排工作人员与您联系，帮助您进一步了解和掌握中国工会的性质、基本职责、根本任务以及会员享有的权利和应尽义务，办理网上登记入会的相关手续。\n        您的留言，我们将有专人及时处理并回复。为确保我们的服务质量，请您务必详细、准确地填写姓名和联系方式等信息。\n        南海区总工会竭诚为每一名会员提供热情周到的服务。\n        友情提示：1.建议您先联系本单位询问是否有工会组织。2.以上职工个人信息及单位信息项请务必如实、完整填写。"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

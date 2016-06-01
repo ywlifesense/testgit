@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent" android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/app_theme_color"
+        android:paddingTop="@dimen/top_bar_padding"
+        android:paddingBottom="@dimen/top_bar_padding"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_bar_btn_width"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_back"
+            android:scaleType="fitXY"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="文体推介"
+            />
+
+    </RelativeLayout>
+
+    <cn.js.nanhaistaffhome.views.main.myservice.WTTJView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JSRefreshListView</string>
+    <string name="readmore">查看更多</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="downrefrash">下拉可以刷新</string>
+    <string name="lastrefrash">上次刷新</string>
+</resources>

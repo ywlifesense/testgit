@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="649"
+        >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/service_image"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_img_descript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_alpha_9"
+            android:layout_alignParentBottom="true"
+            android:text="波意利400元双人餐免费抢"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:textSize="7sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="351"
+        android:orientation="vertical"
+        android:padding="2dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_theme_color"
+            android:textSize="8sp"
+            android:text="波意利"
+            />
+
+        <TextView
+            android:id="@+id/tv_descript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_second"
+            android:textSize="7sp"
+            android:text="佛山岭南新天地长生树3号CS306-2号"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

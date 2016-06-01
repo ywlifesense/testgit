@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/app_theme_color"
+        android:paddingTop="@dimen/top_bar_padding"
+        android:paddingBottom="@dimen/top_bar_padding"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_bar_btn_width"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_back"
+            android:scaleType="fitXY"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="我要咨询"/>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_back"
+            android:onClick="onClick"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginRight="8dp"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="姓名"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <EditText
+        android:id="@+id/et_sex"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="性别"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/arrow_down"
+        android:paddingRight="8dp"
+        android:focusable="false"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="手机号"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="邮箱"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:background="#f2f2f2"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="主题"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:textColor="@color/text_color"
+        android:textColorHint="#999"
+        android:hint="输入求助信息"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_color"
+        android:background="#f2f2f2"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:layout_marginBottom="30dp"
+        android:text="        ”我要咨询“是南海区总工会面向广大职工群众的一个重要窗口。主要是为职工群众提供政策咨询、法律援助、困难帮扶、互助保障、职业介绍、职业培训、意见投诉等方面的留言。\n        您的留言，我们将有专人及时处理并回复。为确保我们的服务质量，请您务必详细、准确地填写姓名和联系方式等信息，我们将为您提供服务。\n        服务电话：12351"
+        />
+
+</LinearLayout>

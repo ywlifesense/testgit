@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme_color">#438ee7</color>
+    <color name="white">#fff</color>
+    <color name="white_alpha_1">#1fff</color>
+    <color name="white_alpha_2">#2fff</color>
+    <color name="white_alpha_3">#3fff</color>
+    <color name="white_alpha_4">#4fff</color>
+    <color name="white_alpha_5">#5fff</color>
+    <color name="white_alpha_10">#afff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+    <color name="orange">#f08300</color>
+    <color name="text_color">#666</color>
+    <color name="text_color_second">#a0a0a0</color>
+    <color name="text_color_third">#aaa</color>
+    <color name="text_color_fouth">#b8b8b8</color>
+    <color name="menu_bg">#2a2a2a</color>
+    <color name="tab_bg">#f3f3f3</color>
+    <color name="tab_text_color">#acacac</color>
+    <color name="content_bg">#f6f6f6</color>
+    <color name="red">#f00</color>
+    <color name="black_alpha_9">#9000</color>
+    <color name="gray">#e2e2e2</color>
+    <color name="line">#e0e0e0</color>
+</resources>

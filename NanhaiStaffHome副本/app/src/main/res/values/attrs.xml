@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="scaleToParent" format="float"/>
+
+    <declare-styleable name="WeightImageView">
+        <attr name="scaleToParent"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"/>
+        <attr name="scaleToParent"/>
+    </declare-styleable>
+
+    <declare-styleable name="MainMenuItem">
+        <attr name="item_icon" format="reference"/>
+        <attr name="item_title" format="string"/>
+        <attr name="item_selected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" format="integer"/>
+    </declare-styleable>
+
+</resources>

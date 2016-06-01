@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="88dp"
+    android:background="@color/white"
+    android:layout_marginTop="8dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:focusable="false"
+        android:layout_width="68dp"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:text="详情"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扑克牌爱情 Poker Love云山峰境大型联活动"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/btn_detail"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_charger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_detail"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="主办单位：南海职工家"
+        android:textColor="@color/text_color_second"
+        android:textSize="12sp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_detail"
+        android:layout_below="@id/tv_charger"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="活动地点：佛山市南海区丹灶镇科教路12号"
+        android:textColor="@color/text_color_second"
+        android:textSize="12sp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_detail"
+        android:layout_below="@id/tv_address"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="活动时间：2015年10月21日（14:00 － 17:30）"
+        android:textColor="@color/text_color_second"
+        android:textSize="12sp"
+        android:singleLine="true"
+        />
+
+</RelativeLayout>

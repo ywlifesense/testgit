@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JSRefreshListView/JSRefreshListView.iml" filepath="$PROJECT_DIR$/JSRefreshListView/JSRefreshListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Menudrawer/Menudrawer.iml" filepath="$PROJECT_DIR$/Menudrawer/Menudrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NanhaiStaffHome.iml" filepath="$PROJECT_DIR$/NanhaiStaffHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-universal-image-loader/android-universal-image-loader.iml" filepath="$PROJECT_DIR$/android-universal-image-loader/android-universal-image-loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/myservice_img"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="      南海区总工会是南海区工会组织的领导机关。1955年2月24日至26日，南海县首届工会代表大会召开，正式成立了南海县总工会（时称南海县工会联合会）。1992年9月，南海撤县设市，更名为南海市总工会，2003年1月撤市设区，更名为佛山市南海区总工会。区总工会现内设机构“一室两科”：办公室、组织科、权益保障科。\n----目前，南海区总工会属下镇（街道）总工会8个，基层工会总数13982个，工会会员达60.86万人。"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f2f2f2"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_wyrh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要入会"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#0e70e9"
+                android:textSize="15sp"
+                android:drawableTop="@drawable/btn_wyrh"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_wyzx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要咨询"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#00b651"
+                android:textSize="15sp"
+                android:drawableTop="@drawable/btn_wyzx"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_wytj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要调解"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ff9f00"
+                android:textSize="15sp"
+                android:drawableTop="@drawable/btn_wytj"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_bookshop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/myservice_img_zgsw"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_bslc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办事流程"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_bslc"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_knbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="困难帮扶"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_knbf"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_flfw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="法律服务"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_flfw"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_ylhz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医疗互助"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_ylhz"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_ldjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劳动竞赛"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_ldjs"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_ldbh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劳动保护"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_ldbh"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_wttj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文体推介"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_wttj"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_bmfw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="便民服务"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_bmfw"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="100dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_zgcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职工超市"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_zgcs"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/btn_gd"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/btn_gd"
+                android:layout_marginRight="32dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/btn_gd"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

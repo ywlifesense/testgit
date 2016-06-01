@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/content_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/app_theme_color"
+        android:paddingTop="@dimen/top_bar_padding"
+        android:paddingBottom="@dimen/top_bar_padding"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_bar_btn_width"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_back"
+            android:scaleType="fitXY"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="综合咨询"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:id="@+id/et_channel_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:text="在线咨询"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:editable="false"
+                />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="标题"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="邮件"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="联系电话"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/et_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="QQ"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/et_is_pub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_down"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:text="是否允许公开"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:editable="false"
+                />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="请输入你所需咨询的事项"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:minLines="8"
+                android:gravity="top"
+                />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/bg_zhzx_commit"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:js="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/menu_bg">
+
+    <LinearLayout
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_setting"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="15sp"
+            android:textColor="@color/white_alpha_10"
+            android:text="设置"/>
+
+    </LinearLayout>
+
+    <cn.js.nanhaistaffhome.views.others.RoundImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_user_avatar_default"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        js:border_inside_color="@color/transparent"
+        js:border_outside_color="@color/orange"
+        js:border_thickness="1dp"
+        js:scaleToParent="0.4"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/iv_user_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <cn.js.nanhaistaffhome.views.home.menu.MainMenuItem
+        android:id="@+id/item_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_name"
+        js:item_icon="@drawable/ic_menu_home"
+        js:item_title="首页"
+        android:tag="0"
+        />
+
+    <cn.js.nanhaistaffhome.views.home.menu.MainMenuItem
+        android:id="@+id/item_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_home"
+        js:item_icon="@drawable/ic_menu_user"
+        js:item_title="个人信息"
+        android:tag="1"
+        />
+
+    <cn.js.nanhaistaffhome.views.home.menu.MainMenuItem
+        android:id="@+id/item_pwd_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_user_info"
+        js:item_title="密码修改"
+        js:item_icon="@drawable/ic_menu_locked"
+        android:tag="2"
+        />
+
+    <cn.js.nanhaistaffhome.views.home.menu.MainMenuItem
+        android:id="@+id/item_member_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_pwd_modify"
+        js:item_icon="@drawable/ic_menu_contact"
+        js:item_title="申请正式会员"
+        android:tag="3"
+        />
+
+    <cn.js.nanhaistaffhome.views.home.menu.MainMenuItem
+        android:id="@+id/item_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_member_auth"
+        js:item_icon="@drawable/ic_menu_exit"
+        js:item_title="退出"
+        android:tag="4"
+        />
+
+</RelativeLayout>
