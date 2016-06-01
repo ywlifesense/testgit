@@ -31,6 +31,10 @@ import cn.js.nanhaistaffhome.R;
  */
 public class WebActivity extends BaseActivity {
 
+    //test for update   show
+
+
+    //teststst
     private TextView titleTv;
     private WebView webView;
     private FrameLayout mFullscreenContainer;
