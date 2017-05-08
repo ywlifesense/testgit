@@ -31,6 +31,9 @@ import cn.js.nanhaistaffhome.utils.SharedPreferenceUtil;
 
 public class LoginActivity extends BaseActivity {
 
+    //测试git
+    //测试2
+
     private EditText nameEt;
     private EditText pwdEt;
     private SharedPreferenceUtil spu;
